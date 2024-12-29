@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
-    <h1> younessss hjoub</h1>
+    <header>
+        <div class="logo"><a href="index.html"><img src="IMAGES/logo.jpeg" alt="logo"></a></div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Catégories <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Infography</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Consulting/Coaching</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Devenir Freelance</a></li>
+                <li><a href="#"><i class="fas fa-globe"></i> Langue</a> 
+                <ul class="dropdown">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Franch</a></li>
+                    <li><a href="#">espaniol</a></li>
+                </ul></li>
+                <li><a href="#">Connexion</a></li>
+                <li><a href="#" class="Inscription">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-section">
+            <img src="IMAGES/hero.png" alt="Hero Background">
+            <div class="hero-content">
+                <h1>Trouvez le service parfait pour vos besoins
+                    académiques et professionnels.</h1>
+                <form class="search-bar">
+                    <input type="text" placeholder="Que souhaitez-vous accomplir aujourd'hui?" />
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
 </body>
 </html>
