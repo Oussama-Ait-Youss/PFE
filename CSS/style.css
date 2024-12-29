@@ -1,4 +1,24 @@
 
+/* animation start */
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px); 
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+
+body {
+    overflow-x: hidden; 
+}
+.animated,header .navbar,main{
+    animation: slideIn 1s ease-out;
+}
+/* animation end */
 body, html {
     margin: 0;
     padding: 0;
@@ -84,6 +104,19 @@ ul{
     color: #ff7253;
 }
 
+.navbar li a i {
+    transition: transform 0.3s ease;
+}
+
+
+.navbar li:hover > a i {
+    transform: rotate(180deg);
+}
+
+
+.navbar li a:hover {
+    color: #007BFF;
+}
 
 /* Hero Section */
 .hero-section {
